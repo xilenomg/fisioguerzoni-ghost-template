@@ -1,0 +1,4 @@
+$red:#FF0000;
+body{
+	background: #CECECE;
+}

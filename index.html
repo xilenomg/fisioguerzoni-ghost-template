@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FisioGuerzoni</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+</head>
+
+<body class=" nav-closed">
+    <div class="main-nav">
+        <ul>
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute=" true "}}">Inicio</a></li>
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute=" true "}}">Sobre</a></li>
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute=" true "}}">Técnicas</a></li>
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute=" true "}}">Avaliação</a></li>
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute=" true "}}">Contato</a></li>
+        </ul>
+    </div>
+    <div class="site-wrapper">
+        <div class="main-header">
+            <div class="main-header-content inner">
+                <a class="blog-logo" href="http://localhost:2368">
+                    <img src="assets/images/logo-leticia-guerzoni.png" alt="Letícia Guerzoni">
+                </a>
+                <button class="agendar-avaliacao">AGENDAR <strong>AVALIAÇÃO</strong></button>
+                <h3>ou ligue para (31) 99999-9999</h3>
+            </div>
+        </div>
+        <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+        </header>
+        <main id="content" class="content" role="main">
+        </main>
+        <footer class="site-footer clearfix">
+            <section>
+                <a class="subscribe-button" href="/subscribe/">Newsletter</a>
+                <a class="subscribe-button icon-feed" href="/rss/">Feed RSS</a>
+            </section>
+            <section class="copyright"><a href="{{@blog.url}}">Letícia Guerzoni</a> &copy; 2016</section>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{asset " js/jquery.fitvids.js "}}"></script>
+    <script type="text/javascript" src="{{asset " js/index.js "}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+@mixin skew($x) {
+    -webkit-transform: skew($x);
+    -moz-transform: skew($x);
+    -ms-transform: skew($x);
+    transform: skew($x);
+}
+
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    transition: $value;
+}
+
+@mixin translateY($y) {
+    -webkit-transform: translateY($y);
+    -moz-transform: translateY($y);
+    -ms-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin translateX($x) {
+    -webkit-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -ms-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin translateXY($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+
+@mixin translateXRotate($x, $rotate) {
+    -webkit-transform: translateX($x) rotate($rotate);
+    -moz-transform: translateX($x) rotate($rotate);
+    -ms-transform: translateX($x) rotate($rotate);
+    transform: translateX($x) rotate($rotate);
+}
+
+@mixin rotate($rotate) {
+    -webkit-transform: rotate($rotate);
+    -moz-transform: rotate($rotate);
+    -ms-transform: rotate($rotate);
+    transform: rotate($rotate);
+}
+
+@mixin scale($value) {
+    -webkit-transform: scale($value);
+    -moz-transform: scale($value);
+    -ms-transform: scale($value);
+    transform: scale($value);
+}
+
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -ms-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin opacity($value) {
+    -webkit-opacity: $value;
+    -moz-opacity: $value;
+    -ms-opacity: $value;
+    opacity: $value;
+}
+
+@mixin background-size($size) {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+@mixin cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin cubicBezier($v1, $v2, $v3, $v4, $v5) {
+    -webkit-transition: all $v1 cubic-bezier($v2, $v3, $v4, $v5);
+    -moz-transition: all $v1 cubic-bezier($v2, $v3, $v4, $v5);
+    -ms-transition: all $v1 cubic-bezier($v2, $v3, $v4, $v5);
+    -o-transition: all $v1 cubic-bezier($v2, $v3, $v4, $v5);
+    transition: all $v1 cubic-bezier($v2, $v3, $v4, $v5);
+}
+
+@mixin gradientTopBottom($color1, $color2) {
+    background: $color1;
+    background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+    background: -o-linear-gradient(top, $color1 0%, $color2 100%);
+    background: -ms-linear-gradient(top, $color1 0%, $color2 100%);
+    background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}
+
+@mixin gradientLeftRight($color1, $color2) {
+    background: $color1;
+    background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -o-linear-gradient(left, $color1 0%, $color2 100%);
+    background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+}
